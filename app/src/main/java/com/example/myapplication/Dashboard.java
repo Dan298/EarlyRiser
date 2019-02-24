@@ -8,15 +8,27 @@ import android.text.format.DateFormat;
 import android.text.format.Time;
 import android.util.Log;
 import android.text.Layout;
+import android.widget.TextView;
 import android.widget.Toolbar;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.lang.String;
 
 public class Dashboard extends AppCompatActivity {
 
+    private TextView alarmtime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        Clock c=new Clock(this);
+        Calendar now = Calendar.getInstance();
+        String time = now.get(Calendar.HOUR_OF_DAY) + ":" + now.get(Calendar.MINUTE);
+        alarmtime = (TextView) findViewById(R.id.alarmtime);
+        System.out.println(time);
+        alarmtime.setText(time);
+
+        Clock c = new Clock(this);
         c.AddClockTickListner(new OnClockTickListner() {
 
             @Override
@@ -27,9 +39,11 @@ public class Dashboard extends AppCompatActivity {
 
             @Override
             public void OnMinuteTick(Time currentTime) {
-                Log.d("Tick Test per Minute",DateFormat.format("h:mm aa", currentTime.toMillis(true)).toString());
+                Log.d("Tick Test per Minute", DateFormat.format("h:mm aa", currentTime.toMillis(true)).toString());
 
             }
         });
 
     }
+
+}
