@@ -19,11 +19,12 @@
         android:gravity="center"
         android:text="Good Morning"
         android:textSize="30sp"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Date"
@@ -42,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
         android:id="@+id/greeting"
@@ -58,16 +59,17 @@
         android:text="John Smith"
         android:textColor="#38C69F"
         android:textSize="25sp"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.04000002" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="251dp"
-        android:layout_height="131dp"
+        android:layout_width="258dp"
+        android:layout_height="120dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -77,13 +79,13 @@
         android:gravity="center"
         android:text="AlarmTime"
         android:textColor="#38C69F"
-        android:textSize="80sp"
+        android:textSize="100sp"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345"
+        app:layout_constraintVertical_bias="0.100000024"
         tools:text="6:45" />
 
     <TextView
@@ -99,30 +101,31 @@
         android:gravity="center"
         android:textColor="#38C69F"
         android:textSize="20sp"
+        app:fontFamily="@font/roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381"
+        app:layout_constraintVertical_bias="0.18"
         tools:text="A.M." />
 
     <Button
         android:id="@+id/WeatherWidget"
-        android:layout_width="173dp"
-        android:layout_height="169dp"
+        android:layout_width="140.38dp"
+        android:layout_height="140.38dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/sun"
+        android:background="@drawable/newsun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.27999997" />
 
     <TextView
         android:id="@+id/textView7"
@@ -140,15 +143,15 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.39999998" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="154dp"
-        android:layout_height="49dp"
+        android:layout_height="96dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -158,11 +161,26 @@
         android:gravity="center"
         android:text="Chance of Rain:"
         android:textColor="#38C69F"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginLeft="288dp"
+        android:layout_marginTop="559dp"
+        android:background="@drawable/OrangMan"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
 </android.support.constraint.ConstraintLayout>
