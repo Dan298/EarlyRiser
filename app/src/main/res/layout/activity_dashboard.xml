@@ -146,7 +146,7 @@
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39999998" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/textView8"
@@ -167,7 +167,7 @@
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003" />
+        app:layout_constraintVertical_bias="0.51" />
 
     <Button
         android:id="@+id/addition"
@@ -182,5 +182,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/Schedule Button"
+        android:layout_width="330.8dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="472dp"
+        android:background="@drawable/schedule_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Reminder Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 </android.support.constraint.ConstraintLayout>
