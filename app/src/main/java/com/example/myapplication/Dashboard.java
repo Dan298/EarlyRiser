@@ -18,6 +18,7 @@ import java.lang.String;
 public class Dashboard extends AppCompatActivity {
 
     private TextView alarmtime;
+    private TextView Date;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,24 +26,12 @@ public class Dashboard extends AppCompatActivity {
         Calendar now = Calendar.getInstance();
         String time = now.get(Calendar.HOUR_OF_DAY) + ":" + now.get(Calendar.MINUTE);
         alarmtime = (TextView) findViewById(R.id.alarmtime);
-        System.out.println(time);
         alarmtime.setText(time);
+        String myDate = now.get(Calendar.MONTH)+ "," + now.get(Calendar.DATE);
+        Date = (TextView) findViewById(R.id.Date);
+        Date.setText(myDate);
 
-        Clock c = new Clock(this);
-        c.AddClockTickListner(new OnClockTickListner() {
 
-            @Override
-            public void OnSecondTick(Time currentTime) {
-                Log.d("Tick Test per Second", DateFormat.format("h:mm:ss aa ", currentTime.toMillis(true)).toString());
-
-            }
-
-            @Override
-            public void OnMinuteTick(Time currentTime) {
-                Log.d("Tick Test per Minute", DateFormat.format("h:mm aa", currentTime.toMillis(true)).toString());
-
-            }
-        });
 
     }
 
