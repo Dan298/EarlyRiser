@@ -89,6 +89,25 @@
         tools:text="6:45" />
 
     <TextView
+        android:id="@+id/rainpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="20%"
+        android:textColor="@color/colorPrimary"
+        android:textSize="75sp"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toTopOf="@+id/schedulebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/weatherwidget" />
+
+    <TextView
         android:id="@+id/AM_PM"
         android:layout_width="91dp"
         android:layout_height="52dp"
@@ -110,25 +129,8 @@
         app:layout_constraintVertical_bias="0.18"
         tools:text="A.M." />
 
-    <Button
-        android:id="@+id/WeatherWidget"
-        android:layout_width="140.38dp"
-        android:layout_height="140.38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/newsun"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27999997" />
-
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textview7"
         android:layout_width="154dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
@@ -167,10 +169,27 @@
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.51" />
+        app:layout_constraintVertical_bias="0.52" />
 
     <Button
-        android:id="@+id/Addition Button"
+        android:id="@+id/weatherwidget"
+        android:layout_width="140.38dp"
+        android:layout_height="140.38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/newsun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27999997" />
+
+    <Button
+        android:id="@+id/additionbutton"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="288dp"
@@ -184,31 +203,51 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/Schedule Button"
+        android:id="@+id/schedulebutton"
         android:layout_width="330.8dp"
         android:layout_height="58dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="184dp"
         android:background="@drawable/schedule_button"
+        app:layout_constraintBottom_toTopOf="@+id/additionbutton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/Reminder Button"
+        android:id="@+id/reminderbutton"
         android:layout_width="330.8dp"
         android:layout_height="58dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="104dp"
         android:background="@drawable/reminders_button"
+        app:layout_constraintBottom_toTopOf="@+id/additionbutton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Schedule Button" />
+        app:layout_constraintTop_toBottomOf="@+id/schedulebutton" />
 
     <Button
-        android:id="@+id/Outfit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:id="@+id/outfitbutton"
+        android:layout_width="330.8dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/outfit_button"
+        app:layout_constraintBottom_toTopOf="@+id/additionbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reminderbutton" />
 
 </android.support.constraint.ConstraintLayout>
