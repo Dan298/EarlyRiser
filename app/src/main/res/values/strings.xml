@@ -14,6 +14,18 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+        completions."</string>
+    <string name="greeting">Good Morning</string>
+    <string name="date">Saturday, February 23</string>
+    <string name="user_name">John Smith</string>
+    <string name="rainpercent">20%</string>
+    <string name="antemeridiem">AM</string>
+    <string name="postmeridiem">pm</string>
+    <string name="weathercondition">Sunny</string>
+    <string name="preciplabel">Chance of Rain: </string>
+
+
+
+
+
 </resources>
