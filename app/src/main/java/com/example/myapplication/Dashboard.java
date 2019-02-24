@@ -1,19 +1,11 @@
 package com.example.myapplication;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.format.DateFormat;
-import android.text.format.Time;
-import android.util.Log;
-import android.text.Layout;
 import android.widget.TextView;
-import android.widget.Toolbar;
-import java.text.SimpleDateFormat;
+
 import java.util.Calendar;
-import java.util.Date;
-import java.lang.String;
+
 
 public class Dashboard extends AppCompatActivity {
 
@@ -25,24 +17,40 @@ public class Dashboard extends AppCompatActivity {
         Calendar now = Calendar.getInstance();
         String time = now.get(Calendar.HOUR_OF_DAY) + ":" + now.get(Calendar.MINUTE);
         alarmtime = (TextView) findViewById(R.id.alarmtime);
-        System.out.println(time);
         alarmtime.setText(time);
 
-        Clock c = new Clock(this);
-        c.AddClockTickListner(new OnClockTickListner() {
 
-            @Override
-            public void OnSecondTick(Time currentTime) {
-                Log.d("Tick Test per Second", DateFormat.format("h:mm:ss aa ", currentTime.toMillis(true)).toString());
+        /*String URL = "https://samples.openweathermap.org/data/2.5/weather?q=London&appid=b6907d289e10d714a6e88b30761fae22";
+        RequestQueue requestQueue= Volley.newRequestQueue(this);
+        JsonObjectRequest objectRequest = new JsonRequest(
+                Request.Method.GET,
+                URL,
+                null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.e("Rest Response")
 
-            }
+                    }
+                },
+                    new Response.ErrorListener(){
+                        @Override
+                        public void onErrorReponse(VolleyError error)
+                        {
 
-            @Override
-            public void OnMinuteTick(Time currentTime) {
-                Log.d("Tick Test per Minute", DateFormat.format("h:mm aa", currentTime.toMillis(true)).toString());
+                        }
+                    }
+    }
 
-            }
-        });
+    private class JsonObjectRequest {
+    }
+        )*/
+
+        /*       Weather
+         relativeLayout = (RelativeLayout) findViewById(R.id.layout);
+        relativeLayout.setBackgroundResource(R.drawable.img1); */
+
+
 
     }
 
