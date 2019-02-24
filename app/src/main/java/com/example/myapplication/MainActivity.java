@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Password = (EditText) findViewById(R.id.password);
         Info = (TextView) findViewById(R.id.info);
         Login = (Button) findViewById(R.id.Login);
+        Signup = (Button)findViewById(R.id.Signup);
         Login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,Dashboard.class);
