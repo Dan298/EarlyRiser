@@ -1,10 +1,14 @@
 package com.example.myapplication;
 
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.text.format.Time;
 import android.util.Log;
+import android.text.Layout;
+import android.widget.Toolbar;
 
 public class Dashboard extends AppCompatActivity {
 
@@ -29,6 +33,3 @@ public class Dashboard extends AppCompatActivity {
         });
 
     }
-
-
-}
