@@ -6,10 +6,10 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-
 public class Dashboard extends AppCompatActivity {
 
     private TextView alarmtime;
+    private TextView Date;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,9 @@ public class Dashboard extends AppCompatActivity {
         alarmtime = (TextView) findViewById(R.id.alarmtime);
         alarmtime.setText(time);
 
+        String myDate = now.get(Calendar.MONTH)+ "," + now.get(Calendar.DATE);
+        Date = (TextView) findViewById(R.id.Date);
+        Date.setText(myDate);
 
         /*String URL = "https://samples.openweathermap.org/data/2.5/weather?q=London&appid=b6907d289e10d714a6e88b30761fae22";
         RequestQueue requestQueue= Volley.newRequestQueue(this);
